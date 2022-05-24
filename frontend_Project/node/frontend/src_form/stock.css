@@ -1,0 +1,60 @@
+#container {
+    width: 900px;
+    margin:0 auto 0 auto;
+}
+a {
+    text-decoration: none;
+    color: blue;
+}
+a:hover {
+    color: #990099;
+}
+#header {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-bottom: 1px blue solid;
+}
+#header_title {
+    text-align: center;
+}
+#header_user {
+    text-align: right;
+}
+
+#nav {
+    width:190px;
+    float:left;
+}
+#nav li {
+    list-style-type: none;
+    padding: 10px;
+    background-color: #CCCCFF;
+}
+#nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    background-color: cyan;
+    width: 700px;
+    float:right;
+}
+#main_title {
+    border-bottom: 2px solid blue;
+    border-left: 6px solid blue;
+    padding: 10px 0 0 5px;
+    margin-bottom: 10px;
+}
+#main table, #main td, #main th {
+    border: 1px solid blue;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+#footer {
+    clear:both;
+    text-align:center;
+    background-color: #CCCCFF;
+    padding:5px;
+}

@@ -1,0 +1,17 @@
+#container {
+    width: 320px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+
+th {
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+a:hover {
+    color: #990099;
+}
