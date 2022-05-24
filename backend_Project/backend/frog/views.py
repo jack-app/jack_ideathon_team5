@@ -1,4 +1,4 @@
-from .forms import LoginForm# , Signupform # 追加
+from .forms import LoginForm, SignupForm # 追加
 from django.shortcuts import redirect
 from django.contrib.auth.views import LoginView, LogoutView # 追加
 from django.contrib.auth import get_user_model # 追加
@@ -6,7 +6,7 @@ from django.contrib.auth.mixins import UserPassesTestMixin # 追加
 from django.views import generic
 
 # ユーザーモデル取得
-User = get_user_model()
+User = get_user_model() # ???
 
 '''トップページ'''
 class TempView(generic.TemplateView):
@@ -36,7 +36,7 @@ class MyPage(OnlyYouMixin, generic.DetailView):
     template_name = 'frog/my_page.html'
     # モデル名小文字(user)でモデルインスタンスがテンプレートファイルに渡される
 
-"""
+
 '''サインアップ'''
 class Signup(generic.CreateView):
     template_name = 'frog/user_form.html'
@@ -56,4 +56,3 @@ class Signup(generic.CreateView):
 class SignupDone(generic.TemplateView):
     template_name = 'frog/signup_done.html'
     
-"""

@@ -14,8 +14,8 @@ from pathlib import Path
 
 # ログインフォーム
 # 追加
-LOGIN_URL = 'account:login' # ログインのURLの設定
-LOGIN_REDIRECT_URL = 'account:top' #ログインが完了した後に遷移するURL
+LOGIN_URL = 'frog:login' # ログインのURLの設定
+LOGIN_REDIRECT_URL = 'frog:top' #ログインが完了した後に遷移するURL
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
